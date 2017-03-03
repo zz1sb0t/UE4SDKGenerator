@@ -51,8 +51,14 @@
     <Compile Include="Memory\IMemoryUtility.cs" />
     <Compile Include="Memory\LocalMemory.cs" />
     <Compile Include="Memory\MemoryObject.cs" />
+    <Compile Include="Memory\PatternScan.cs" />
     <Compile Include="Memory\RemoteMemory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDKGenerator\ExtendedStringBuilder.cs" />
+    <Compile Include="SDKGenerator\SDKClass.cs" />
+    <Compile Include="SDKGenerator\SDKGen.cs" />
+    <Compile Include="SDKGenerator\SDKProperty.cs" />
+    <Compile Include="SDKGenerator\SDKUtilities.cs" />
     <Compile Include="UnrealStructures\FString.cs" />
     <Compile Include="Stores\NameStore.cs" />
     <Compile Include="Stores\ObjectStore.cs" />
@@ -74,7 +80,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

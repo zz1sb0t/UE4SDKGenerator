@@ -158,6 +158,10 @@ namespace UE4.EmptyGame.Memory
             return BitConverter.ToUInt32(ReadMem(address + offset, 4), 0);
         }
 
+        public short ReadInt16(IntPtr address, int offset)
+        {
+            return BitConverter.ToInt16(ReadMem(address + offset, 2), 0);
+        }
         public ulong ReadUInt64(IntPtr address, int offset)
         {
             return BitConverter.ToUInt64(ReadMem(address + offset, 8), 0);

@@ -19,14 +19,18 @@ namespace UE4.EmptyGame.Memory
         {
             return Memory.ReadByte(BaseAddress, offset);
         }
-        public int ReadInt32(IntPtr address, int offset)
-        {
-            return Memory.ReadInt32(BaseAddress, offset);
-        }
 
+        public float ReadFloat(int offset)
+        {
+            return ReadSingle(offset);
+        }
         public double ReadDouble(int offset)
         {
             return Memory.ReadDouble(BaseAddress, offset);
+        }
+        public short ReadInt16(int offset)
+        {
+            return Memory.ReadInt16(BaseAddress, offset);
         }
         public ushort ReadUInt16(int offset)
         {

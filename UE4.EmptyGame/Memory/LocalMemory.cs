@@ -190,5 +190,10 @@ namespace UE4.EmptyGame.Memory
         {
             WriteMem(address + offset, BitConverter.GetBytes(value));
         }
+
+        public short ReadInt16(IntPtr address, int offset)
+        {
+            return BitConverter.ToInt16(ReadMem(address + offset, 2), 0);
+        }
     }
 }

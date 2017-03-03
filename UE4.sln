@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4", "UE4\UE4.csproj", "{5F912197-8CE4-42B8-9B50-86D07095DFCA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.EmptyGame", "UE4.EmptyGame\UE4.EmptyGame.csproj", "{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectGenerator", "ProjectGenerator\ProjectGenerator.csproj", "{1FBB1734-D893-45D9-AB54-0C193658FA43}"
@@ -13,16 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{04255575
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConanExiles", "Games\ConanExiles\ConanExiles.csproj", "{225D783E-4228-49A8-9587-BD09250FDF39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.Test", "UE4.Test\UE4.Test.csproj", "{F34F596A-8674-4395-A46F-7A6FCC7352D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F912197-8CE4-42B8-9B50-86D07095DFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F912197-8CE4-42B8-9B50-86D07095DFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F912197-8CE4-42B8-9B50-86D07095DFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F912197-8CE4-42B8-9B50-86D07095DFCA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{225D783E-4228-49A8-9587-BD09250FDF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{225D783E-4228-49A8-9587-BD09250FDF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{225D783E-4228-49A8-9587-BD09250FDF39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34F596A-8674-4395-A46F-7A6FCC7352D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34F596A-8674-4395-A46F-7A6FCC7352D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34F596A-8674-4395-A46F-7A6FCC7352D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34F596A-8674-4395-A46F-7A6FCC7352D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,6 +20,7 @@ namespace UE4.EmptyGame.Memory
         Matrix ReadMatrix(IntPtr address, int offset);
         float ReadSingle(IntPtr address, int offset);
         T ReadStruct<T>(IntPtr address, int offset) where T : MemoryObject, new();
+        short ReadInt16(IntPtr address, int offset);
         ushort ReadUInt16(IntPtr address, int offset);
         uint ReadUInt32(IntPtr address, int offset);
         ulong ReadUInt64(IntPtr address, int offset);

@@ -43,12 +43,6 @@
     <Compile Include="SDKGen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UE4.Core\UE4.EmptyGame.csproj">
-      <Project>{f7dcd6b7-84c8-4f9b-b2d6-457e453d8fa3}</Project>
-      <Name>UE4.EmptyGame</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

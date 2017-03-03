@@ -5,13 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4", "UE4\UE4.csproj", "{5F912197-8CE4-42B8-9B50-86D07095DFCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.EmptyGame", "UE4.Core\UE4.EmptyGame.csproj", "{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.SDKGenerator", "UE4.SDKGenerator\UE4.SDKGenerator.csproj", "{10DB2865-296D-44E2-8C7F-5A5D059E8732}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{A6E668FC-78CD-4061-B84A-D27C230B781C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConanExiles", "ConanExiles\ConanExiles.csproj", "{2CFB6420-3C48-48A0-8B35-0CEF213C2152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.EmptyGame", "UE4.EmptyGame\UE4.EmptyGame.csproj", "{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{5F912197-8CE4-42B8-9B50-86D07095DFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F912197-8CE4-42B8-9B50-86D07095DFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F912197-8CE4-42B8-9B50-86D07095DFCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10DB2865-296D-44E2-8C7F-5A5D059E8732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10DB2865-296D-44E2-8C7F-5A5D059E8732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10DB2865-296D-44E2-8C7F-5A5D059E8732}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{2CFB6420-3C48-48A0-8B35-0CEF213C2152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CFB6420-3C48-48A0-8B35-0CEF213C2152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CFB6420-3C48-48A0-8B35-0CEF213C2152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

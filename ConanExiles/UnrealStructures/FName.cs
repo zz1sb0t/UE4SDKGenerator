@@ -16,9 +16,9 @@ namespace ConanExiles.Core.UnrealStructures
         {
             get
             {
-                if (UnrealGame.Instance.Names.Count > ComparisonIndex)
+                if (ConanExilesGame.Instance.Names.Count > ComparisonIndex)
                 {
-                    var nameentry = UnrealGame.Instance.Names.Get(ComparisonIndex);
+                    var nameentry = ConanExilesGame.Instance.Names.Get(ComparisonIndex);
                     if (nameentry?.Value != null)
                         return CleanName(nameentry.Value);
                     return "";

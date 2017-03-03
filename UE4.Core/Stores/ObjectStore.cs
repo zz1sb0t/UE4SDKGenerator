@@ -1,8 +1,8 @@
 ﻿using System;
-using UE4.Core.Memory;
-using UE4.Core.UnrealClasses;
+using UE4.EmptyGame.Memory;
+using UE4.EmptyGame.UnrealClasses;
 
-namespace UE4.Core.Stores
+namespace UE4.EmptyGame.Stores
 {
 
 

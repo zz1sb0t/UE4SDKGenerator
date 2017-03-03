@@ -1,4 +1,4 @@
-namespace UE4.Core.UnrealClasses
+namespace UE4.EmptyGame.UnrealClasses
 {
     public class UStruct : UField
     {

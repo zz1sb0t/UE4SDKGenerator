@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UE4.Core;
-using UE4.Core.Memory;
+using UE4.EmptyGame;
+using UE4.EmptyGame.Memory;
 
 namespace UE4.SDKGenerator
 {

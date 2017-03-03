@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UE4.Core.Memory;
-using UE4.Core.Stores;
+using UE4.EmptyGame.Memory;
+using UE4.EmptyGame.Stores;
 
-namespace UE4.Core
+namespace UE4.EmptyGame
 {
     public class UnrealGame
     {

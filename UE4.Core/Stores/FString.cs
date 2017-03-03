@@ -1,8 +1,8 @@
 using System;
 using System.Text;
-using UE4.Core.Memory;
+using UE4.EmptyGame.Memory;
 
-namespace UE4.Core.Stores
+namespace UE4.EmptyGame.Stores
 {
 
     public class FString : MemoryObject

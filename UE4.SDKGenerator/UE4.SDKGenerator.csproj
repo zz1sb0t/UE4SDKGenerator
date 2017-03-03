@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UE4.Core\UE4.Core.csproj">
+    <ProjectReference Include="..\UE4.Core\UE4.EmptyGame.csproj">
       <Project>{f7dcd6b7-84c8-4f9b-b2d6-457e453d8fa3}</Project>
-      <Name>UE4.Core</Name>
+      <Name>UE4.EmptyGame</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

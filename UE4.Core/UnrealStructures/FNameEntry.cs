@@ -1,7 +1,7 @@
 ﻿using System;
-using UE4.Core.Memory;
+using UE4.EmptyGame.Memory;
 
-namespace UE4.Core.UnrealStructures
+namespace UE4.EmptyGame.UnrealStructures
 {
     public class FNameEntry:MemoryObject
     {

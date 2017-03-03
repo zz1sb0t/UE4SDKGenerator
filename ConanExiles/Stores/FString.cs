@@ -16,7 +16,7 @@ namespace ConanExiles.Core.Stores
         public IntPtr ArrayData => ReadIntPtr(0);
         public string ReadUnicodeString()
         {
-            byte[] buffer = UnrealGame.Instance.Memory.ReadBytes(ArrayData,0, Count*2);
+            byte[] buffer = ConanExilesGame.Instance.Memory.ReadBytes(ArrayData,0, Count*2);
             return Encoding.Unicode.GetString(buffer).TrimEnd('\0');
         }
 

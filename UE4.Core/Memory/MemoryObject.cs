@@ -1,7 +1,7 @@
 ﻿using System;
 using SharpDX;
 
-namespace UE4.Core.Memory
+namespace UE4.EmptyGame.Memory
 {
     public abstract class MemoryObject
     {

@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using SharpDX;
 
-namespace UE4.Core.Memory
+namespace UE4.EmptyGame.Memory
 {
     public class LocalMemory : IMemoryUtility
     {

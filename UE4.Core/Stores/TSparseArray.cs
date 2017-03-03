@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UE4.Core.Memory;
+using UE4.EmptyGame.Memory;
 
-namespace UE4.Core.Stores
+namespace UE4.EmptyGame.Stores
 {
     public class TSparseArray<T> : MemoryObject where T : MemoryObject, new()
     {

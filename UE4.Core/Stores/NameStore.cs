@@ -1,7 +1,7 @@
 ﻿using System;
-using UE4.Core.UnrealStructures;
+using UE4.EmptyGame.UnrealStructures;
 
-namespace UE4.Core.Stores
+namespace UE4.EmptyGame.Stores
 {
     public class NameStore
     {

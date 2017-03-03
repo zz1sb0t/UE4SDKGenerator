@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using UE4.Core.Memory;
-using UE4.Core.UnrealStructures;
+using UE4.EmptyGame.Memory;
+using UE4.EmptyGame.UnrealStructures;
 
-namespace UE4.Core.UnrealClasses
+namespace UE4.EmptyGame.UnrealClasses
 {
   
     public class UObject:MemoryObject

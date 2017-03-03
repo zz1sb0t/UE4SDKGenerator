@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using SharpDX;
 
-namespace UE4.Core.Memory
+namespace UE4.EmptyGame.Memory
 {
     [Flags]
     public enum ProcessAccessFlags : uint

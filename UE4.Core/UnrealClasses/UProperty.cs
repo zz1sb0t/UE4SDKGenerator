@@ -1,4 +1,4 @@
-﻿namespace UE4.Core.UnrealClasses
+﻿namespace UE4.EmptyGame.UnrealClasses
 {
     //UPropertyFinish @ 0x78
     public class UProperty:UField

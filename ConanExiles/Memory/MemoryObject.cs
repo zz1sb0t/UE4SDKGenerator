@@ -8,7 +8,7 @@ namespace ConanExiles.Core.Memory
         public abstract int ObjectSize { get; }
         public IntPtr BaseAddress { get; set; }
 
-        public IMemoryUtility Memory => UnrealGame.Instance.Memory;
+        public IMemoryUtility Memory => ConanExilesGame.Instance.Memory;
 
         public T SafeGet<T>(int offset) where T : MemoryObject, new()
         {

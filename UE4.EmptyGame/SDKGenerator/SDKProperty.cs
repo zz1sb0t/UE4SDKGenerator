@@ -74,6 +74,11 @@ namespace UE4.EmptyGame.SDKGenerator
             WritePropertSummary(sb);
             switch (Type)
             {
+                case "StructProperty":
+                    {
+                        sb.AppendLine($"public {SubType} {Name} => ReadStruct<{SubType}>(0x{Offset:X2});");
+                        break;
+                    }
                 case "ObjectProperty":
                 {
                         sb.AppendLine($"public {SubType} {Name} => ReadUObject<{SubType}>(0x{Offset:X2});");

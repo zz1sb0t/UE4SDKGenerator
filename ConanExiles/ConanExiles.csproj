@@ -67,7 +67,7 @@
     <Compile Include="UnrealClasses\UProperty.cs" />
     <Compile Include="UnrealClasses\UScriptStruct.cs" />
     <Compile Include="UnrealClasses\UStruct.cs" />
-    <Compile Include="UnrealGame.cs" />
+    <Compile Include="ConanExilesGame.cs" />
     <Compile Include="UnrealStructures\FName.cs" />
     <Compile Include="UnrealStructures\FNameEntry.cs" />
   </ItemGroup>

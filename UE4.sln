@@ -5,13 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4", "UE4\UE4.csproj", "{5F912197-8CE4-42B8-9B50-86D07095DFCA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{A6E668FC-78CD-4061-B84A-D27C230B781C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.EmptyGame", "UE4.EmptyGame\UE4.EmptyGame.csproj", "{F7DCD6B7-84C8-4F9B-B2D6-457E453D8FA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectGenerator", "ProjectGenerator\ProjectGenerator.csproj", "{1FBB1734-D893-45D9-AB54-0C193658FA43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConanExiles", "ConanExiles\ConanExiles.csproj", "{225D783E-4228-49A8-9587-BD09250FDF39}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{04255575-8BDD-46A8-B0E1-F72DF8E6A45A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConanExiles", "Games\ConanExiles\ConanExiles.csproj", "{225D783E-4228-49A8-9587-BD09250FDF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +40,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{225D783E-4228-49A8-9587-BD09250FDF39} = {A6E668FC-78CD-4061-B84A-D27C230B781C}
+		{225D783E-4228-49A8-9587-BD09250FDF39} = {04255575-8BDD-46A8-B0E1-F72DF8E6A45A}
 	EndGlobalSection
 EndGlobal

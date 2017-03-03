@@ -1,7 +1,7 @@
-﻿using System;
-using ConanExiles.Core.UnrealStructures;
+using System;
+using ConanExiles.UnrealStructures;
 
-namespace ConanExiles.Core.Stores
+namespace ConanExiles.Stores
 {
     public class NameStore
     {

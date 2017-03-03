@@ -1,7 +1,7 @@
-﻿using System;
-using ConanExiles.Core.Memory;
+using System;
+using ConanExiles.Memory;
 
-namespace ConanExiles.Core.UnrealStructures
+namespace ConanExiles.UnrealStructures
 {
     public class FNameEntry:MemoryObject
     {

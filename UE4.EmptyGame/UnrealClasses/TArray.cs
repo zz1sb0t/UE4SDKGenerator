@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UE4.EmptyGame.Memory;
 
-namespace UE4.EmptyGame.Stores
+namespace UE4.EmptyGame.UnrealClasses
 {
     public class TArray<T>:MemoryObject where T:MemoryObject,new()
     {

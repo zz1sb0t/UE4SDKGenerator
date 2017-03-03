@@ -240,3 +240,8 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/ProjectGenerator.exe
+/ProjectGenerator.exe.config
+/ProjectGenerator.vshost.exe
+/ProjectGenerator.vshost.exe.config
+/ProjectGenerator.vshost.exe.manifest

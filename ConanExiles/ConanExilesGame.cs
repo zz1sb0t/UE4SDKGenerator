@@ -1,8 +1,12 @@
-﻿using System;
-using ConanExiles.Core.Memory;
-using ConanExiles.Core.Stores;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ConanExiles.Memory;
+using ConanExiles.Stores;
 
-namespace ConanExiles.Core
+namespace ConanExiles
 {
     public class ConanExilesGame
     {

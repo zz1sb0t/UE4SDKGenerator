@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using ConanExiles.Core.Memory;
+using ConanExiles.Memory;
 
-namespace ConanExiles.Core.Stores
+namespace ConanExiles.UnrealClasses
 {
     public class TArray<T>:MemoryObject where T:MemoryObject,new()
     {

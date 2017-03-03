@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using ConanExiles.Core.Memory;
-using ConanExiles.Core.UnrealStructures;
+using ConanExiles.Memory;
+using ConanExiles.UnrealStructures;
 
-namespace ConanExiles.Core.UnrealClasses
+namespace ConanExiles.UnrealClasses
 {
   
     public class UObject:MemoryObject

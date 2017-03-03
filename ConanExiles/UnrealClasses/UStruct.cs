@@ -1,4 +1,4 @@
-namespace ConanExiles.Core.UnrealClasses
+namespace ConanExiles.UnrealClasses
 {
     public class UStruct : UField
     {

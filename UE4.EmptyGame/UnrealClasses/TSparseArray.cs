@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using ConanExiles.Core.Memory;
+using UE4.EmptyGame.Memory;
 
-namespace ConanExiles.Core.Stores
+namespace UE4.EmptyGame.UnrealClasses
 {
     public class TSparseArray<T> : MemoryObject where T : MemoryObject, new()
     {

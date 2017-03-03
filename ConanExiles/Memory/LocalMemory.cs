@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using SharpDX;
 
-namespace ConanExiles.Core.Memory
+namespace ConanExiles.Memory
 {
     public class LocalMemory : IMemoryUtility
     {

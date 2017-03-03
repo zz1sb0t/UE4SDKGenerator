@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using SharpDX;
 
-namespace ConanExiles.Core.Memory
+namespace ConanExiles.Memory
 {
     public abstract class MemoryObject
     {

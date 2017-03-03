@@ -53,12 +53,12 @@
     <Compile Include="Memory\MemoryObject.cs" />
     <Compile Include="Memory\RemoteMemory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stores\FString.cs" />
+    <Compile Include="UnrealStructures\FString.cs" />
     <Compile Include="Stores\NameStore.cs" />
     <Compile Include="Stores\ObjectStore.cs" />
     <Compile Include="Stores\StaticIndirectArray.cs" />
-    <Compile Include="Stores\TArray.cs" />
-    <Compile Include="Stores\TSparseArray.cs" />
+    <Compile Include="UnrealClasses\TArray.cs" />
+    <Compile Include="UnrealClasses\TSparseArray.cs" />
     <Compile Include="UnrealClasses\Properties.cs" />
     <Compile Include="UnrealClasses\UClass.cs" />
     <Compile Include="UnrealClasses\UField.cs" />

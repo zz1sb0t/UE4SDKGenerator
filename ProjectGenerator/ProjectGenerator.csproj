@@ -4,24 +4,27 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{225D783E-4228-49A8-9587-BD09250FDF39}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{1FBB1734-D893-45D9-AB54-0C193658FA43}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConanExiles</RootNamespace>
-    <AssemblyName>ConanExiles</AssemblyName>
+    <RootNamespace>ProjectGenerator</RootNamespace>
+    <AssemblyName>ProjectGenerator</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,14 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SharpDX, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpDX.3.1.1\lib\net45\SharpDX.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SharpDX.Mathematics, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpDX.Mathematics.3.1.1\lib\net45\SharpDX.Mathematics.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,33 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Memory\IMemoryUtility.cs" />
-    <Compile Include="Memory\LocalMemory.cs" />
-    <Compile Include="Memory\MemoryObject.cs" />
-    <Compile Include="Memory\RemoteMemory.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnrealStructures\FString.cs" />
-    <Compile Include="Stores\NameStore.cs" />
-    <Compile Include="Stores\ObjectStore.cs" />
-    <Compile Include="Stores\StaticIndirectArray.cs" />
-    <Compile Include="UnrealClasses\TArray.cs" />
-    <Compile Include="UnrealClasses\TSparseArray.cs" />
-    <Compile Include="UnrealClasses\Properties.cs" />
-    <Compile Include="UnrealClasses\UClass.cs" />
-    <Compile Include="UnrealClasses\UField.cs" />
-    <Compile Include="UnrealClasses\UFunction.cs" />
-    <Compile Include="UnrealClasses\UObject.cs" />
-    <Compile Include="UnrealClasses\UProperty.cs" />
-    <Compile Include="UnrealClasses\UScriptStruct.cs" />
-    <Compile Include="UnrealClasses\UStruct.cs" />
-    <Compile Include="ConanExilesGame.cs" />
-    <Compile Include="UnrealStructures\FName.cs" />
-    <Compile Include="UnrealStructures\FNameEntry.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

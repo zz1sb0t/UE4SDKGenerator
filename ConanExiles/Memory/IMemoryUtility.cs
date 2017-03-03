@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using SharpDX;
 
-namespace ConanExiles.Core.Memory
+namespace ConanExiles.Memory
 {
     public interface IMemoryUtility
     {

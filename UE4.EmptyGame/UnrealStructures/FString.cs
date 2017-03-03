@@ -1,8 +1,8 @@
 using System;
 using System.Text;
-using ConanExiles.Core.Memory;
+using UE4.EmptyGame.Memory;
 
-namespace ConanExiles.Core.Stores
+namespace UE4.EmptyGame.UnrealStructures
 {
 
     public class FString : MemoryObject
@@ -16,7 +16,7 @@ namespace ConanExiles.Core.Stores
         public IntPtr ArrayData => ReadIntPtr(0);
         public string ReadUnicodeString()
         {
-            byte[] buffer = ConanExilesGame.Instance.Memory.ReadBytes(ArrayData,0, Count*2);
+            byte[] buffer = UnrealGame.Instance.Memory.ReadBytes(ArrayData,0, Count*2);
             return Encoding.Unicode.GetString(buffer).TrimEnd('\0');
         }
 

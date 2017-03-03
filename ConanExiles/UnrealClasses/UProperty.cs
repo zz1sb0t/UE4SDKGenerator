@@ -1,4 +1,4 @@
-﻿namespace ConanExiles.Core.UnrealClasses
+namespace ConanExiles.UnrealClasses
 {
     //UPropertyFinish @ 0x78
     public class UProperty:UField

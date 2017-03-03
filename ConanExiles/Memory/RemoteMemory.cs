@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Threading;
 using SharpDX;
 
-namespace ConanExiles.Core.Memory
+namespace ConanExiles.Memory
 {
     [Flags]
     public enum ProcessAccessFlags : uint

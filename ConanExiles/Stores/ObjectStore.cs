@@ -1,8 +1,8 @@
-﻿using System;
-using ConanExiles.Core.Memory;
-using ConanExiles.Core.UnrealClasses;
+using System;
+using ConanExiles.Memory;
+using ConanExiles.UnrealClasses;
 
-namespace ConanExiles.Core.Stores
+namespace ConanExiles.Stores
 {
 
 

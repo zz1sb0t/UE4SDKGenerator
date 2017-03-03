@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace ConanExiles.Core.UnrealClasses
+namespace ConanExiles.UnrealClasses
 {
     //UPropertyFinish @ 0x78
     public class UByteProperty: UProperty

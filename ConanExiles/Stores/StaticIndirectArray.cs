@@ -1,7 +1,7 @@
 using System;
-using ConanExiles.Core.Memory;
+using ConanExiles.Memory;
 
-namespace ConanExiles.Core.Stores
+namespace ConanExiles.Stores
 {
     public class StaticIndirectArray:MemoryObject
     {

@@ -195,5 +195,10 @@ namespace ConanExiles.Memory
         {
             return BitConverter.ToInt16(ReadMem(address + offset, 2), 0);
         }
+
+        public bool ReadBool(IntPtr address, int offset)
+        {
+            return BitConverter.ToBoolean(ReadMem(address + offset, 1), 0);
+        }
     }
 }

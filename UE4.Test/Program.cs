@@ -1,9 +1,12 @@
-﻿using System;
+﻿using ConanExiles.SDKGenerator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-using ConanExiles.SDKGenerator;
+
+
 
 namespace UE4.Test
 {
@@ -11,7 +14,7 @@ namespace UE4.Test
     {
         static void Main(string[] args)
         {
-            SdkGen gen = new SdkGen();
+          SdkGen gen = new SdkGen();
             gen.Generate();
         }
     }

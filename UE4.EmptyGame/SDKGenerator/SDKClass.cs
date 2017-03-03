@@ -30,9 +30,14 @@ namespace UE4.EmptyGame.SDKGenerator
                 propname += counter;
             }
             bool supported = true;
-            string subtype = "";
-            string arraySubType = "";
-            int subElementSize = 0;
+            var prop = new SDKProperty()
+            {
+                Name = propname,
+                ElementSize = property.ElementSize,
+                IsTArray = classname == "ArrayProperty",
+                Offset = property.Offset,
+                Type = classname,
+            };
             switch (classname)
             {
                 case "AssetObjectProperty":
@@ -45,18 +50,18 @@ namespace UE4.EmptyGame.SDKGenerator
                 case "ArrayProperty":
                 {
                     var arrayProp = property.Cast<UArrayProperty>();
-                    subtype = property.Cast<UArrayProperty>().Inner.Class.Name;
-                    switch (subtype)
+                        prop.SubType = property.Cast<UArrayProperty>().Inner.Class.Name;
+                    switch (prop.SubType)
                     {
                         case "NameProperty":
                         {
-                            arraySubType = "FName";
+                                    prop.ArraySubType = "FName";
                             break;
                         }
                             case "ObjectProperty":
                                 {
-                                    subElementSize = arrayProp.Inner.Cast<UObjectProperty>().PropertyClass.PropertySize;
-                                    arraySubType = arrayProp.Inner.Cast<UObjectProperty>().PropertyClass.NameWithPrefix;
+                                    prop.SubElementSize = arrayProp.Inner.Cast<UObjectProperty>().PropertyClass.PropertySize;
+                                    prop.ArraySubType = arrayProp.Inner.Cast<UObjectProperty>().PropertyClass.NameWithPrefix;
                                     var nsProp = SDKUtilities.GetPackageName(arrayProp.Inner.Cast<UObjectProperty>().PropertyClass);
                                     if (!UsedNamespaces.Contains(nsProp))
                                         UsedNamespaces.Add(nsProp);
@@ -64,8 +69,8 @@ namespace UE4.EmptyGame.SDKGenerator
                                 }
                             case "StructProperty":
                                 {
-                                    arraySubType = arrayProp.Inner.Cast<UStructProperty>().Struct.NameWithPrefix;
-                                    subElementSize = arrayProp.Inner.Cast<UStructProperty>().Struct.PropertySize;
+                                    prop.ArraySubType = arrayProp.Inner.Cast<UStructProperty>().Struct.NameWithPrefix;
+                                    prop.SubElementSize = arrayProp.Inner.Cast<UStructProperty>().Struct.PropertySize;
                                     var nsProp = SDKUtilities.GetPackageName(arrayProp.Inner.Cast<UStructProperty>().Struct.Cast<UClass>());
                                     if (!UsedNamespaces.Contains(nsProp))
                                         UsedNamespaces.Add(nsProp);
@@ -74,10 +79,19 @@ namespace UE4.EmptyGame.SDKGenerator
                         }
                     break;
                 }
+                case "BoolProperty":
+                {
+                    var p = property.Cast<UBoolProperty>();
+                    prop.BoolFieldMask = p.FieldMask;
+                    prop.BoolByteMask = p.ByteMask;
+                    prop.BitMask = p.BitMask;
+                    prop.BoolOffset = p.ByteOffset;
+                    break;
+                }
                 case "ObjectProperty":
                 {
-                    subtype = property.Cast<UObjectProperty>().PropertyClass.NameWithPrefix;
-                    subElementSize =property.Cast<UObjectProperty>().PropertyClass.PropertySize;
+                        prop.SubType = property.Cast<UObjectProperty>().PropertyClass.NameWithPrefix;
+                        prop.SubElementSize = property.Cast<UObjectProperty>().PropertyClass.PropertySize;
                         var nsProp = SDKUtilities.GetPackageName(property.Cast<UObjectProperty>().PropertyClass);
                         if (!UsedNamespaces.Contains(nsProp))
                             UsedNamespaces.Add(nsProp);
@@ -85,8 +99,8 @@ namespace UE4.EmptyGame.SDKGenerator
                 }
                 case "StructProperty":
                 {
-                    subtype = property.Cast<UStructProperty>().Struct.NameWithPrefix;
-                   subElementSize = property.Cast<UStructProperty>().Struct.PropertySize;
+                        prop.SubType = property.Cast<UStructProperty>().Struct.NameWithPrefix;
+                        prop.SubElementSize = property.Cast<UStructProperty>().Struct.PropertySize;
                     var nsProp = SDKUtilities.GetPackageName(property.Cast<UStructProperty>().Struct.Cast<UClass>());
                         if (!UsedNamespaces.Contains(nsProp))
                             UsedNamespaces.Add(nsProp);
@@ -95,17 +109,7 @@ namespace UE4.EmptyGame.SDKGenerator
             }
             if (supported)
             {
-                var prop = new SDKProperty()
-                {
-                    Name = propname,
-                    ElementSize = property.ElementSize,
-                    IsTArray = classname == "ArrayProperty",
-                    Offset = property.Offset,
-                    Type = classname,
-                    SubType = subtype,
-                    SubElementSize = subElementSize,
-                    ArraySubType =arraySubType
-                };
+               
                 Properties.Add(propname, prop);
             }
         }

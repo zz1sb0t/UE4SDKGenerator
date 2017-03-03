@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Games\ConanExiles\ConanExiles.csproj">
-      <Project>{3FCF5A18-096D-4129-91A7-E63C03AEEA5F}</Project>
+      <Project>{6CF5BF33-0A65-4314-8217-C6AF9A324317}</Project>
       <Name>ConanExiles</Name>
     </ProjectReference>
   </ItemGroup>

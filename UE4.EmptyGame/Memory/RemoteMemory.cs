@@ -249,5 +249,10 @@ namespace UE4.EmptyGame.Memory
         {
             WriteMem(address + offset, BitConverter.GetBytes(value));
         }
+
+        public bool ReadBool(IntPtr address, int offset)
+        {
+            return BitConverter.ToBoolean(ReadMem(address + offset, 1), 0);
+        }
     }
 }

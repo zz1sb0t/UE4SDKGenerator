@@ -14,7 +14,10 @@ namespace UE4.EmptyGame.Memory
         {
             return Memory.SafeGet<T>(BaseAddress, offset);
         }
-
+        public bool ReadBool(int offset)
+        {
+            return Memory.ReadBool(BaseAddress, offset);
+        }
         public byte ReadByte(int offset)
         {
             return Memory.ReadByte(BaseAddress, offset);

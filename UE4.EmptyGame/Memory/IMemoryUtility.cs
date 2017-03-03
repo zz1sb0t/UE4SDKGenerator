@@ -10,7 +10,7 @@ namespace UE4.EmptyGame.Memory
         Process Process { get; set; }
         void Initialize();
         string ReadAnsiString(IntPtr address, int offset);
-        
+        bool ReadBool(IntPtr address, int offset);
         byte ReadByte(IntPtr address, int offset);
         byte[] ReadBytes(IntPtr address,int offset, int length);
         double ReadDouble(IntPtr address, int offset);
@@ -39,5 +39,6 @@ namespace UE4.EmptyGame.Memory
         void WriteByte(IntPtr address, int offset, byte value);
         void WriteSingle(IntPtr address, int offset, float value);
         void WriteDouble(IntPtr address, int offset, double value);
+        
     }
 }

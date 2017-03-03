@@ -11,7 +11,7 @@ namespace ConanExiles
 {
     public class ConanExilesGame
     {
-        public string Name => "ConanExiles";
+        public string Name => "ConanExilesGame";
 
         public IMemoryUtility Memory { get; private set; }
         /// <summary>

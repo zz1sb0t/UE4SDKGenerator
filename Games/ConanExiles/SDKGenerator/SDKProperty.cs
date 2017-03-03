@@ -16,6 +16,10 @@ namespace ConanExiles.SDKGenerator
         public string SubType { get; set; }
         public int SubElementSize { get; set; }
         public string ArraySubType { get; set; }
+
+        public uint BoolFieldMask { get; set; }
+        public uint BoolOffset { get; set; }
+        public uint BoolByteMask { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -46,6 +50,8 @@ namespace ConanExiles.SDKGenerator
             }
         }
 
+        public uint BitMask { get; set; }
+
         void GetSetProperty(ExtendedStringBuilder sb,int offset,string type,string readType,string name)
         {
             sb.SetPropertyIndent();
@@ -74,6 +80,23 @@ namespace ConanExiles.SDKGenerator
             WritePropertSummary(sb);
             switch (Type)
             {
+                case "BoolProperty":
+                {
+                    if (BoolFieldMask == 0xFF)
+                    {
+                        GetSetProperty(sb,(int)(Offset+BoolOffset),"bool","Bool",Name);
+                    }
+                    else
+                    {
+                        sb.AppendLine($"public bool {Name} => (ReadByte(0x{Offset + BoolOffset:X4}) & 0x{BoolByteMask:X2}) == 0x{BoolByteMask:X2};");
+                    }
+                    break;
+                }
+                case "StrProperty":
+                    {
+                        sb.AppendLine($"public FString {Name} => new FString(BaseAddress+0x{Offset:X2});");
+                        break;
+                }
                 case "StructProperty":
                     {
                         sb.AppendLine($"public {SubType} {Name} => ReadStruct<{SubType}>(0x{Offset:X2});");

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using ConanExiles.Memory;
 using ConanExiles.UnrealClasses;
 
@@ -25,7 +26,31 @@ namespace ConanExiles.Stores
         {
             return GetPtr(index);
         }
-
+        public T[] FindObjects<T>() where T : UObject, new()
+        {
+            List<T> objs = new List<T>();
+            for (int i = 0; i < Count; i++)
+            {
+                var obj = Get(i);
+                if (obj != null && obj.IsA<T>())
+                {
+                    objs.Add(obj.Cast<T>());
+                }
+            }
+            return objs.ToArray();
+        }
+        public T Find<T>() where T : UObject,new()
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                var obj = Get(i);
+                if (obj != null && obj.IsA<T>())
+                {
+                    return obj.Cast<T>();
+                }
+            }
+            return default(T);
+        }
         public UObject Find(string fullname)
         {
             for (int i = 0; i < Count; i++)

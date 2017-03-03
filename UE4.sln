@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.Core", "UE4.Core\UE4.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE4.SDKGenerator", "UE4.SDKGenerator\UE4.SDKGenerator.csproj", "{10DB2865-296D-44E2-8C7F-5A5D059E8732}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{A6E668FC-78CD-4061-B84A-D27C230B781C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConanExiles", "ConanExiles\ConanExiles.csproj", "{2CFB6420-3C48-48A0-8B35-0CEF213C2152}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{10DB2865-296D-44E2-8C7F-5A5D059E8732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10DB2865-296D-44E2-8C7F-5A5D059E8732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10DB2865-296D-44E2-8C7F-5A5D059E8732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CFB6420-3C48-48A0-8B35-0CEF213C2152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CFB6420-3C48-48A0-8B35-0CEF213C2152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CFB6420-3C48-48A0-8B35-0CEF213C2152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CFB6420-3C48-48A0-8B35-0CEF213C2152}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CFB6420-3C48-48A0-8B35-0CEF213C2152} = {A6E668FC-78CD-4061-B84A-D27C230B781C}
 	EndGlobalSection
 EndGlobal
